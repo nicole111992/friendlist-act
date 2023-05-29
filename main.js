@@ -9,10 +9,7 @@ function save(event) {
   var socialMedia = document.getElementById('inputFriendSocial').value;
 
   var friendList = JSON.parse(localStorage.getItem('friendList')) || [];
-  if (fullName=== "" || age === "" || birthdate === "" || email=== "" || phone === "" || duration === "" || socialMedia === ""){
-    alert("Please fill out the form");
-    return;
-  }
+  
   if (id) {
     // Update existing friend
     friendList.forEach((friend) => {
